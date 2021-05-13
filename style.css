@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 100%;
+}
+
+/* ヘッダー */
 header {
   height: 70px;
   background-color: #ec715f;
@@ -27,4 +32,25 @@ nav {
   font-size: 16px;
   margin: 0 30px;
   line-height: 70px;
+}
+/* ヘッダーここまで */
+
+/* メインビジュアル */
+.main-visual {
+  background-image: url(img/mv.png);
+  background-size: cover;
+  height: 650px;
+  color: #fafafa;
+  text-align: center;
+  background-position: center;
+}
+
+.main-visual > h1 {
+  margin: 0 auto;
+  padding: 200px 0 10px;
+  font-size: 64px;
+}
+
+.main-visual > p {
+  margin: 0 auto;
 }
