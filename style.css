@@ -33,7 +33,6 @@ nav {
   margin: 0 30px;
   line-height: 70px;
 }
-/* ヘッダーここまで */
 
 /* メインビジュアル */
 .main-visual {
@@ -43,6 +42,7 @@ nav {
   color: #fafafa;
   text-align: center;
   background-position: center;
+  width: 100%;
 }
 
 .main-visual > h1 {
@@ -53,4 +53,90 @@ nav {
 
 .main-visual > p {
   margin: 0 auto;
+}
+
+/* ポートフォリオ */
+.portfolio {
+  width: 100%;
+  background-color: #eceff1;
+  padding: 90px 0;
+  text-align: center;
+}
+
+h2 {
+  display: inline-block;
+  position: relative;
+  font-size: 32px;
+}
+
+h2:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  display: inline-block;
+  width: 70px;
+  height: 3px;
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  background-color: #ec715f;
+}
+
+.portfolio > p {
+  padding: 30px 0;
+}
+
+.p-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 920px;
+  height: 510px;
+  margin: 0 auto;
+}
+
+.p-img {
+  height: 250px;
+  width: 300px;
+}
+
+.p-images :first-child {
+  background-image: url(img/sketch.jpg);
+  margin-bottom: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.p-images :nth-child(2) {
+  background-image: url(img/websuku.png);
+  margin: 0 10px 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.p-images :nth-child(3) {
+  background-image: url(img/write.jpg);
+  margin-bottom: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.p-images :nth-child(4) {
+  background-image: url(img/webcamp.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.p-images :nth-child(5) {
+  background-image: url(img/talk.jpg);
+  margin: 0 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.p-images :nth-child(6) {
+  background-image: url(img/webcamp-mother.png);
+  background-size: cover;
+  background-position: center;
 }
