@@ -84,7 +84,8 @@ h2:before {
   background-color: #ec715f;
 }
 
-.portfolio > p {
+.portfolio > p,
+.feature > p {
   padding: 30px 0;
 }
 
@@ -139,4 +140,38 @@ h2:before {
   background-image: url(img/webcamp-mother.png);
   background-size: cover;
   background-position: center;
+}
+
+/* フィーチャー */
+.feature {
+  width: 980px;
+  padding: 90px 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.strengths {
+  display: flex;
+}
+
+.strength {
+  width: 320px;
+}
+
+.strengths :nth-child(2) {
+  margin: 0 10px;
+}
+
+.icon {
+  font-size: 60px;
+  font-weight: lighter;
+}
+
+h6 {
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+.strength > p {
+  text-align: left;
 }
