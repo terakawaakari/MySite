@@ -169,7 +169,7 @@ h2:before {
   font-weight: lighter;
 }
 
-h6 {
+.strength > h6 {
   padding: 10px 0;
   font-size: 20px;
 }
@@ -237,21 +237,24 @@ h6 {
   text-align: center;
 }
 
-.contact > h2 {
-  margin: 0 auto;
-  width: 800px;
-}
-
 .contact-container {
   display: flex;
 }
 
 .contact-contents {
   width: 400px;
+  margin: 0 auto;
 }
 
 .mail {
+  display: table;
   padding-bottom: 20px;
+  margin: 0 auto;
+}
+
+.tel {
+  display: table;
+  margin: 0 auto;
 }
 
 .mail > h6,
@@ -261,8 +264,13 @@ h6 {
   font-size: 20px;
 }
 
-.sns {
+.sns-container {
   width: 400px;
+}
+
+.sns {
+  display: table;
+  margin: 0 auto;
 }
 
 .sns-icon {
