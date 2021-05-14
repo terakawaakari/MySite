@@ -86,7 +86,8 @@ h2:before {
 
 .portfolio > p,
 .feature > p,
-.profile > p {
+.profile > p,
+.title > p {
   padding: 30px 0;
 }
 
@@ -223,4 +224,51 @@ h6 {
 
 .name > p {
   padding-bottom: 20px;
+}
+
+/* Contact */
+.contact {
+  width: 800px;
+  padding: 90px 0;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.contact > h2 {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.contact-container {
+  display: flex;
+}
+
+.contact-contents {
+  width: 400px;
+}
+
+.mail {
+  padding-bottom: 20px;
+}
+
+.mail > h6,
+.tel > h6,
+.sns > h6 {
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+.sns {
+  width: 400px;
+}
+
+.sns-icon {
+  font-size: 50px;
+}
+
+.sns :nth-child(3) {
+  padding: 0 20px;
 }
