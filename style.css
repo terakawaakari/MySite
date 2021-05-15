@@ -264,6 +264,7 @@ h2:before {
 
 .mail {
   display: table;
+  width: 128px;
   padding-bottom: 20px;
   margin: 0 auto;
   justify-content: center;
