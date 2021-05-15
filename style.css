@@ -92,9 +92,8 @@ h2:before {
   background-color: #ec715f;
 }
 
-.portfolio > p,
+.container > p,
 .feature > p,
-.profile > p,
 .title > p {
   padding: 30px 0;
 }
@@ -172,7 +171,8 @@ h2:before {
   margin: 0 10px;
 }
 
-.icon {
+.icon,
+.c-icon {
   font-size: 60px;
   font-weight: lighter;
 }
@@ -298,4 +298,118 @@ footer {
   color: #fafafa;
   text-align: center;
   line-height: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    height: 50px;
+  }
+
+  .nav-img {
+    height: 50px;
+  }
+
+  .main-visual {
+    background-image: url(img/code.png);
+  }
+
+  .main-visual > h1 {
+    font-size: 40px;
+  }
+
+  .main-visual > p {
+    font-size: 18px;
+  }
+
+  .p-images {
+    flex-flow: row wrap;
+    width: 300px;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .p-images :nth-child(1),
+  .p-images :nth-child(3),
+  .p-images :nth-child(5) {
+    display: none;
+  }
+
+  .p-images :nth-child(2) {
+    margin: 0;
+  }
+
+  .p-images :nth-child(4) {
+    margin: 10px auto;
+  }
+
+  .feature {
+    width: 90%;
+  }
+
+  .strengths {
+    display: block;
+  }
+
+  .strength {
+    margin: 0 auto;
+  }
+
+  .strengths :nth-child(2) {
+    margin: 0 auto;
+  }
+
+  .icon {
+    margin-top: 10px;
+  }
+
+  .profile-container {
+    width: 90%;
+    display: block;
+  }
+
+  .image-container,
+  .profile-content {
+    width: auto;
+  }
+
+  .profile-image {
+    margin-bottom: 20px;
+  }
+
+  .name > h6,
+  .skill > h6 {
+    text-align: center;
+  }
+
+  .name > p,
+  .skill > p {
+    text-align: center;
+  }
+
+  .contact {
+    width: 90%;
+  }
+
+  .contact-container {
+    display: block;
+  }
+
+  .contact-contents {
+    text-align: center;
+  }
+
+  .sns-container {
+    padding-top: 20px;
+    text-align: center;
+    width: auto;
+  }
+
+  .sns :nth-child(3) {
+    padding: 0 8px;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
