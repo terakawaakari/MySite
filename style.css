@@ -8,6 +8,10 @@ body {
   width: 100%;
 }
 
+.noline {
+  text-decoration: none;
+}
+
 /* ヘッダー */
 header {
   height: 70px;
@@ -22,9 +26,12 @@ nav {
   margin: 0 auto;
 }
 
+#nav-image {
+  margin-right: auto;
+}
+
 .nav-img {
   height: 70px;
-  margin-right: auto;
 }
 
 .nav-item {
@@ -53,6 +60,7 @@ nav {
 
 .main-visual > p {
   margin: 0 auto;
+  font-size: 20px;
 }
 
 /* ポートフォリオ */
@@ -250,6 +258,7 @@ h2:before {
   display: table;
   padding-bottom: 20px;
   margin: 0 auto;
+  justify-content: center;
 }
 
 .tel {
