@@ -13,6 +13,14 @@ body {
 }
 
 /* ヘッダー */
+.hamburger {
+  display: none;
+}
+
+input {
+  display: none;
+}
+
 header {
   height: 70px;
   background-color: #ec715f;
@@ -303,6 +311,47 @@ footer {
 @media screen and (max-width: 767px) {
   header {
     height: 50px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .menu-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    height: 30px;
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: #ec715f;
+  }
+
+  .menu-btn span,
+  .menu-btn span:before,
+  .menu-btn span:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #fafafa;
+    position: absolute;
+  }
+
+  .menu-btn span:before {
+    bottom: 8px;
+  }
+
+  .menu-btn span:after {
+    top: 8px;
+  }
+
+  .nav-item {
+    display: none;
   }
 
   .nav-img {
